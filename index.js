@@ -10,6 +10,9 @@ app.use(express.json());
 
 mongoose.set("strictQuery", true);
 
+// const usersRoute = require("./routes/UsersRoute");
+// app.use("/api/auth", usersRoute);
+
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
